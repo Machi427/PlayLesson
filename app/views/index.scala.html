@@ -1,7 +1,8 @@
-@(msg: String)
-
-@main("Sample Page") {
+	@(msg: String, datas: List[Message])
 	
-	<h1>Hello!</h1>
-	<p>@msg</p>
-}
+	@main("Sample Page") {
+		
+		<h1>Hello!</h1>
+		<p>@msg</p>
+		<pre>@datas</pre>
+	}
